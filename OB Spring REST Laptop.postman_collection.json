@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "29f60fca-e964-49a9-9775-c3e13ad57615",
+		"name": "OB Spring REST Laptop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops SEARCH FOR ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/laptops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops/1 SEARCH FOR ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/laptops/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops/4 SEARCH FOR ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/laptops/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brand\": \"Lenovo\",\r\n\t\"model\": \"Legion 7 Gaming\",\r\n\t\"color\": \"Storm Grey\",\r\n\t\"display\": \"16.0'' QHD IPS Display 160Hz\",\r\n\t\"graphicCard\": \"NVIDIA GeForce RTX 3080 16GB GDDR6\",\r\n\t\"processor\": \"AMD Ryzen™ 9 5900HX\",\r\n\t\"storage\": \"1TB SSD\",\r\n\t\"ram\": \"32GB DDR4\",\r\n\t\"microphoneType\": \"Internal Microphone\",\r\n\t\"webcamType\": \"Internal Webcam\",\r\n\t\"speakersType\": null,\r\n\t\"hasOpticalDrive\": false,\r\n\t\"hasFingerprintScanner\": false,\r\n\t\"hasBluetooth\": true,\r\n\t\"hasSdCardReader\": null,\r\n\t\"nrUsbPorts\": 3,\r\n\t\"batteryType\": null,\r\n\t\"operatingSystem\": \"Windows 11 Home 64-bit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/laptops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"brand\": \"Dell\",\r\n        \"model\": \"inspiron 15 3593\",\r\n        \"color\": \"black\",\r\n        \"display\": \"15.6\\\" FHD Display\",\r\n        \"graphicCard\": \"4GB Nvidia MX-230\",\r\n        \"processor\": \"Intel Core i7 10th Generation\",\r\n        \"storage\": \"1024 GB SSD\",\r\n        \"ram\": \"16 GB DDR4\",\r\n        \"microphoneType\": \"Internal Microphone\",\r\n        \"webcamType\": \"Internal Webcam\",\r\n        \"speakersType\": \"Stereo Speakers\",\r\n        \"hasOpticalDrive\": false,\r\n        \"hasFingerprintScanner\": false,\r\n        \"hasBluetooth\": true,\r\n        \"hasSdCardReader\": true,\r\n        \"nrUsbPorts\": 3,\r\n        \"batteryType\": \"Li-Ion\",\r\n        \"operatingSystem\": \"Windows 10 Home 64-bit\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/laptops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/laptops/1 DELETE ONE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/laptops/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops DELETE ALL",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/laptops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
