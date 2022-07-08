@@ -11,7 +11,7 @@ public class HelloController {
     // This is an annotated method by the @GetMapping annotation. The @GetMapping annotated methods in the
     // @Controller (in this case a @RestController) annotated classes handle the HTTP GET requests matched
     // with given URI expression. This method returns a web page with a greeting.
-    @GetMapping("/hello")
+    @GetMapping({"/", "/hello"})
     public String greet() {
         //System.out.println("Hello World!");
         return """

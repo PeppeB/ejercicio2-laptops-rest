@@ -12,7 +12,9 @@ Starters para web (osea para la creacíon de controladores)
 
 Aplicación API REST con acceso a base de datos H2 para persistir la informacíon.
 
-El acceso se puede realizar desde Postman o Navegador.
+El acceso se puede realizar desde:
+* Postman
+* Navegador (url: https://laptops-rest.herokuapp.com/)
 
 ## Entidad Laptop
 
